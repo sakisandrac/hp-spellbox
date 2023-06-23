@@ -1,16 +1,19 @@
 .random-spell-flex {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .spell-info-container {
+  position: absolute;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 27%;
   height: 250px;
-  border: 1px solid black;
+  padding: 30px;
+  flex-wrap: wrap;
   border-radius: 20px;
 }
 
@@ -20,4 +23,10 @@
 
 .incantation {
   margin-top: 0;
+}
+
+.scroll-img {
+  position: relative;
+  z-index: -1;
+  width: 40%;
 }

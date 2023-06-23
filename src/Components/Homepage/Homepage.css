@@ -34,5 +34,48 @@
 .save-btn {
   padding: 9px;
   border: none;
-  border-radius: 20px;;
+  border-radius: 20px;
+}
+
+.save-btn-gryffindor {
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color: #791b18;
+  color: white;
+}
+
+.save-btn-ravenclaw {
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1a3771;
+  color: white;
+}
+
+.save-btn-slytherin {
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0a4324;
+  color: white;
+}
+
+.save-btn-hufflepuff {
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color:#ae833e;
+  color: white;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.random-spell-container {
+  display: flex;
+  justify-content: center;
 }

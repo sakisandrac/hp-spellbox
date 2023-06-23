@@ -1,9 +1,12 @@
-import './RandomSpell.css'
+import './RandomSpell.css';
+import scroll from './scroll.png';
 
 const RandomSpell = ({randomSpell}) => {
 
   return (
+    <>
     <div className="random-spell-flex">
+      <img className="scroll-img" src={scroll} />
       <div className="spell-info-container">
         <p className="spell-name">{randomSpell?.name}</p>
         <p className="incantation-header">Incantation:</p>
@@ -12,6 +15,7 @@ const RandomSpell = ({randomSpell}) => {
          <p className="incantation">{randomSpell?.effect}</p>
       </div>
     </div>
+    </>
   )
 }
 

@@ -27,8 +27,9 @@ const Homepage = () => {
     console.log(randomSpell)
   }, [user.clicks])
 
+  //FUNCTIONS
   const selectHouse = (e) => {
-  const {name, value} = e.target;
+    const {name, value} = e.target;
 
     setUser(prev => {
       return {...prev, [name]: value}
@@ -84,8 +85,10 @@ const Homepage = () => {
     <div className="random-spell-container">
       <RandomSpell randomSpell={randomSpell} />
     </div>
-    <button className='save-btn' onClick={saveSpell}>Save Spell</button>
-    <button className='save-btn' onClick={getRandomSpell}>Get Random Spell</button>
+    <div className="btn-container">
+      <button className={`save-btn${user.house ? "-"+user.house : ""}`} onClick={saveSpell}>Save Spell</button>
+      <button className={`save-btn${user.house ? "-"+user.house : ""}`} onClick={getRandomSpell}>Get Random Spell</button>
+    </div>
     </>
   )
 }
