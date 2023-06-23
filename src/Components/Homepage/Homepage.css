@@ -1,15 +1,38 @@
 .gryffindor {
-  background-color: red;
+  background-color: #791b18;
 }
 
 .ravenclaw{
-  background-color: blue;
+  background-color: #1a3771;
 }
 
 .hufflepuff {
-  background-color: yellow;
+  background-color: #ae833e;
 }
 
 .slytherin {
-  background-color: green;
+  background-color: #0a4324;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  color: #181818;
+}
+
+.house-label {
+  padding-bottom: 10px;
+}
+
+.house-selector {
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.save-btn {
+  padding: 9px;
+  border: none;
+  border-radius: 20px;;
 }
