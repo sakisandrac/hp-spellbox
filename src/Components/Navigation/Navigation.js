@@ -9,8 +9,8 @@ const Navigation = () => {
       <img className="logo" src={logo}></img>
       <div className="nav-link-container">
         <Link className="nav-link" to="/">Home</Link>
-        <Link className="nav-link" to="">My Spells</Link>
-        <Link className="nav-link" to="">All Spells</Link>
+        <Link className="nav-link" to="/mySpells">My Spells</Link>
+        <Link className="nav-link" to="/allSpells">All Spells</Link>
       </div>
     </nav>
   )

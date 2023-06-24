@@ -5,6 +5,7 @@ import Login from './Login/Login';
 import Navigation from './Navigation/Navigation';
 import AllSpells from './AllSpells/AllSpells';
 import { useState, useEffect } from 'react';
+import { MySpells } from './MySpells/MySpells';
 
 function App() {
   //STATE
@@ -41,7 +42,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage user={user} setUser={setUser} randomSpell={randomSpell}/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/allSpells" element={<AllSpells/>}/>
+      <Route path="/allSpells" element={<AllSpells user={user} allSpells={allSpells}/>}/>
+      <Route path="/mySpells" element={<MySpells user={user}/>}/>
     </Routes>
     </>
   );

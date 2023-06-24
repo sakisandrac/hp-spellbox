@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Homepage.css';
 import RandomSpell from '../RandomSpell/RandomSpell';
+import scroll from './scroll.png';
 
 const Homepage = ({randomSpell, user, setUser}) => {
 
@@ -56,6 +57,7 @@ const Homepage = ({randomSpell, user, setUser}) => {
         </main>
       </div>
       <div className="random-spell-container">
+        <img className="scroll-img" src={scroll} />
         <RandomSpell randomSpell={randomSpell} />
       </div>
       <div className="btn-container">
