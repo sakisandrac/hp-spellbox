@@ -112,9 +112,10 @@ button:hover {
   position: relative;
   z-index: 1;
   width: 40%;
+  max-width: 500px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .random-spell-container {
     display: flex;
     justify-content: center;
