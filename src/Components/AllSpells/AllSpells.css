@@ -59,5 +59,13 @@
   margin: 5px;
 }
 
+.search-container {
+  margin: 0 0 20px 20px;
+}
+
+.search-input {
+  max-width: 300px;
+  margin-left: 10px;
+}
 
 
