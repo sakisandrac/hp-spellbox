@@ -43,7 +43,7 @@ function App() {
       <Route path="/" element={<Homepage user={user} setUser={setUser} randomSpell={randomSpell}/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/allSpells" element={<AllSpells user={user} allSpells={allSpells}/>}/>
-      <Route path="/mySpells" element={<MySpells user={user}/>}/>
+      <Route path="/mySpells" element={<MySpells user={user} setUser={setUser}/>}/>
     </Routes>
     </>
   );

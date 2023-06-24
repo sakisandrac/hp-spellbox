@@ -53,10 +53,13 @@
   display: flex;
   flex-direction: column;
   width: 200px;
-  max-height: 250px;
+  max-height: 300px;
   border: 1px solid black;
   text-align: center;
   margin: 5px;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: scroll;
 }
 
 .search-container {
