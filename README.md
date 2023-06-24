@@ -2,7 +2,7 @@
 This application allows users to view spells from Harry Potter. Users can also save spells, and search through spells
 
 ## Technologies Used
-React, TypeScript, create-react-app, CSS, HTML, JavaScript
+React, React router v6, create-react-app, CSS, HTML, JavaScript
 
 ## Contributors:
 <a href="https://github.com/sakisandrac">Saki Chatphatthanasiri</a>
