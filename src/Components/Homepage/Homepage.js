@@ -2,31 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Homepage.css';
 import RandomSpell from '../RandomSpell/RandomSpell';
 
-const Homepage = () => {
-
-//STATE
-  const [user, setUser] = useState({
-    name: "Wizard",
-    house:"",
-    savedSpells: [],
-    clicks: 0
-  });
-  const [allSpells, setAllSpells] = useState([]);
-  const [randomSpell, setRandomSpell] = useState([]);
-
-//USE EFFECT
-  useEffect(() => {
-    fetch('https://wizard-world-api.herokuapp.com/Spells')
-    .then(res => res.json())
-    .then(data => {
-      setAllSpells(data)
-      setRandomSpell(data[getRandomIndex(data)])
-    })
-  },[])
-
-  useEffect(() => {
-    setRandomSpell(allSpells[getRandomIndex(allSpells)])
-  }, [user.clicks])
+const Homepage = ({randomSpell, user, setUser}) => {
 
 //FUNCTIONS
   const selectHouse = (e) => {
@@ -35,10 +11,6 @@ const Homepage = () => {
     setUser(prev => {
       return {...prev, [name]: value}
     });
-  }
-
-  const getRandomIndex = (allSpells) => {
-    return Math.floor(Math.random() * allSpells.length)
   }
 
   const saveSpell = () => {
