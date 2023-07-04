@@ -36,6 +36,10 @@ const Homepage = ({randomSpell, user, setUser}) => {
     })
   }
 
+  useEffect(() => {
+    localStorage.setItem('spells', JSON.stringify(user.savedSpells))
+  }, [user.savedSpells])
+
   return (
     <div className={`main-page-container${user.house ? "-" + user.house : ""}`}>
       <div className={`main-container ${user.house ? user.house : ""}`}>

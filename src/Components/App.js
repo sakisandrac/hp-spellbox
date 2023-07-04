@@ -12,7 +12,7 @@ function App() {
   const [user, setUser] = useState({
     name: "Wizard",
     house:"",
-    savedSpells: [],
+    savedSpells: JSON.parse(localStorage.getItem('spells')) || [],
     clicks: 0
   });
   const [allSpells, setAllSpells] = useState([]);
