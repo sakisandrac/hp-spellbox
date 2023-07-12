@@ -18,5 +18,5 @@ At the time of this project, I am a student at Turing School of Software Enginee
 2. In the terminal, open this app by running the command `cd <project folder name>`
 3. Run the command `npm start` to start the server.
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-5. You can also view the project <a href="https://saki-c-portfolio.vercel.app/">here</a>.
+5. You can also view the project <a href="https://sakic-hp-spellbox-react.vercel.app/">here</a>.
 6. Use control C to stop the server.
